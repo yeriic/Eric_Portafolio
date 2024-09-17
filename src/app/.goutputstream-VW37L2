@@ -1,0 +1,18 @@
+import Image from "next/image";
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <div className="container">
+    <div className="card">
+        <h1 className="title">Portafolio de Eric</h1>
+        <div className="link-button-container">
+        <Link href="/home/presentacion"> 
+          <div className="link-button">Ver</div>
+        </Link>
+        </div>
+        
+    </div>
+</div>
+  );
+}

@@ -1,0 +1,84 @@
+.limitador {
+    max-width: 850px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-left: 1px solid rgba(0, 0, 0, 0.3); /* Línea izquierda */
+    border-right: 1px solid rgba(0, 0, 0, 0.3); /* Línea derecha */
+    padding: 0 20px; /* Añadir un poco de espacio interno en los laterales */
+  }
+
+  .proyectocontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proyectocontainer h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .proyectocontainer h2 {
+    display: flex;
+    align-items: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .proyectocontainer p {
+    margin: 20px 0;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+  
+  .github-button {
+    position: relative; /* Cambiar a posición relativa */
+    margin-top: auto; /* Ajustar margen superior */
+    margin-left: auto; /* Ajustar margen izquierdo */
+  }
+  
+  
+  .github-button button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .github-button button:hover {
+    background-color: #0056b3;
+  }
+  
+  .separador {
+    width: 100%;
+    height: 2px;
+    background-color: #000; /* Cambia esto al color de línea que desees */
+    margin: 20px 0;
+  }
+
+  .github-button:hover {
+    background-color: #2779bd;
+    animation: zoomIn 0.3s ease-in-out forwards; /* Aplica la animación al hacer hover */
+  }
+  
+  .github-button:not(:hover) {
+    animation: zoomOut 0.3s ease-in-out forwards; /* Aplica la animación de zoom out al dejar de hacer hover */
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1); /* Escala normal */
+    }
+    to {
+      transform: scale(1.10); /* Escala aumentada */
+    }
+  }
+  
+  @keyframes zoomOut {
+    from {
+      transform: scale(1.10); /* Escala aumentada */
+    }
+    to {
+      transform: scale(1); /* Escala normal */
+    }
+  }

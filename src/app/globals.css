@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #e2eaf7; /* Cambiamos el color de fondo del botón a azul pastel */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.card {
+  padding: 5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Cambiamos el color de fondo del botón a azul pastel */
+
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold
+}
+
+.button:hover {
+  background-color: #4170f2;
+}
+
+.link-button {
+  @apply block bg-blue-500 text-white rounded;
+  padding: 8px 24px; 
+  text-align: center; 
+  margin: 0 auto; 
+  width: 100px;
+  cursor: pointer; /* Agregamos cursor pointer para indicar que es interactivo */
+}
+
+.link-button:hover {
+  background-color: #2779bd;
+  animation: zoomIn 0.3s ease-in-out forwards; /* Aplica la animación al hacer hover */
+}
+
+.link-button:not(:hover) {
+  animation: zoomOut 0.3s ease-in-out forwards; /* Aplica la animación de zoom out al dejar de hacer hover */
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1); /* Escala normal */
+  }
+  to {
+    transform: scale(1.10); /* Escala aumentada */
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.10); /* Escala aumentada */
+  }
+  to {
+    transform: scale(1); /* Escala normal */
+  }
+}

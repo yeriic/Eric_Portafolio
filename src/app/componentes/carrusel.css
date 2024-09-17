@@ -1,0 +1,10 @@
+.carousel-container {
+    width: 19%;
+    margin: auto;
+    
+  }
+
+  .carousel .slide img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
